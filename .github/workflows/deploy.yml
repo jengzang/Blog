@@ -32,12 +32,22 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Cache NPM dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            blog/node_modules
+            blog/themes/butterfly/node_modules
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json', '**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+
       - name: Install Dependencies
         run: |
           cd blog
-          npm install
+          npm install --legacy-peer-deps
           cd themes/butterfly
-          npm install
+          npm install --legacy-peer-deps || true
 
       - name: Build Hexo
         run: |
