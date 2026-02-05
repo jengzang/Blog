@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install -g hexo-cli)",
+      "Bash(hexo init:*)",
+      "Bash(npm install)",
+      "Bash(npm install:*)",
+      "Bash(git clone:*)",
+      "Bash(hexo new:*)",
+      "Bash(go mod init:*)",
+      "Bash(hexo clean:*)",
+      "Bash(hexo generate:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
