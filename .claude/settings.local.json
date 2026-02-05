@@ -11,7 +11,10 @@
       "Bash(hexo clean:*)",
       "Bash(hexo generate:*)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\n初始化 Hexo 個人博客項目\n\n- 安裝並配置 Hexo 8.1.1 與 Butterfly 主題\n- 創建所有必需頁面（關於、簡歷、分類、標籤等）\n- 實現 Go 後端認證系統（JWT + bcrypt）\n- 添加 5 篇示例文章（語言學和地理學領域）\n- 配置多語言支持（繁體中文、簡體中文、英文）\n- 實現簡歷頁面密鑰驗證功能\n- 添加完整項目文檔（README、QUICKSTART、實施總結）\n\n功能特點：\n- 多語言支持與繁簡轉換\n- 日夜間模式切換\n- 響應式設計\n- JWT 認證保護簡歷頁面\n- 外部鏈接到知乎文章\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)"
     ]
   }
 }
